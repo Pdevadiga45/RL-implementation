@@ -9,8 +9,13 @@ Training Visualization: The training process is visualized with a plot of cumula
 Libraries used:
 
 gymnasium : for environment simulation
+
 stable-baselines3 : for the SAC algorithm
+
 torch : for GPU acceleration
+
 matplotlib : for plotting training metrics
+
 numpy : for data manipulation
+
 TensorBoard : for real-time logging
