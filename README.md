@@ -1,4 +1,4 @@
-***Reinforcement Learning***
+# Reinforcement Learning Implementation
 
 This project implements reinforcement learning using the Soft Actor-Critic (SAC) algorithm to train a model in the "Humanoid-v4" gym environment. Key features include:
 
