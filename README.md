@@ -1,6 +1,6 @@
 # Reinforcement Learning Implementation
 
-This project implements reinforcement learning using the Soft Actor-Critic (SAC) algorithm to train a model in the "Humanoid-v4" gym environment. Key features include:
+***This project implements reinforcement learning using the Soft Actor-Critic (SAC) algorithm to train a model in the "Humanoid-v4" gym environment. Key features include:***
 
 Model Saving & Loading: The code checks for pre-trained models and resumes training from the last checkpoint, along with replay buffer restoration and training metrics tracking.
 
@@ -10,7 +10,7 @@ Video Recording: A custom video recorder is used to capture agent behavior every
 
 Training Visualization: The training process is visualized with a plot of cumulative rewards using matplotlib.
 
-Libraries used:
+***Libraries used:***
 
 gymnasium : for environment simulation
 
