@@ -23,3 +23,9 @@ matplotlib : for plotting training metrics
 numpy : for data manipulation
 
 TensorBoard : for real-time logging
+
+
+# WORK IN PROGRESS:
+
+***Task: Attempting to compare training the humanoid-v4 model using different actor-critic algorithms namely, 
+SAC, TD3 and DDPG and visualizing how the different parameters like rewards, loss and episode length change overtime across these algorithms***
