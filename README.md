@@ -55,7 +55,7 @@ Environment Setup: Details of the Humanoid-v4 Gymnasium environment, configured 
 **Loss Plots**: Focused on training stability through loss patterns.
 **Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
 
-***Results***
+<h1>**Results**</h1>
 
 **Each algorithm showed distinct characteristics**:
 
