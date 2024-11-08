@@ -41,25 +41,25 @@ The goal of this project is to evaluate the performance of three reinforcement l
 
 ***Algorithm Selection***:
 
-**SAC**: A stochastic off-policy actor-critic method focused on exploration and stability.
+-**SAC**: A stochastic off-policy actor-critic method focused on exploration and stability.
 
-**PPO**: An on-policy, simpler yet robust algorithm for handling complex control problems.
+-**PPO**: An on-policy, simpler yet robust algorithm for handling complex control problems.
 
-**DDPG**: A deterministic off-policy algorithm known for continuous action spaces but more sensitive to hyperparameters.
+-**DDPG**: A deterministic off-policy algorithm known for continuous action spaces but more sensitive to hyperparameters.
 
 ***Training Pipeline***:
 
-**Environment Setup**: Configured Humanoid-v4 environment to track episodic data and overall reward progression.
+-**Environment Setup**: Configured Humanoid-v4 environment to track episodic data and overall reward progression.
 
-**Custom Callback Integration**: Used a custom callback to save metrics, ensuring consistency across episodes.
+-**Custom Callback Integration**: Used a custom callback to save metrics, ensuring consistency across episodes.
 
-**Evaluation Metrics**: Performance is measured through reward patterns, loss trends, and episode length consistency.
+-**Evaluation Metrics**: Performance is measured through reward patterns, loss trends, and episode length consistency.
 
 ***Visualization and Analysis***:
 
-**Reward Plots**: Compared total rewards achieved across episodes for each algorithm.
-**Loss Plots**: Focused on training stability through loss patterns.
-**Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
+-**Reward Plots**: Compared total rewards achieved across episodes for each algorithm.
+-**Loss Plots**: Focused on training stability through loss patterns.
+-**Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
 
 <h1>Results</h1>
 
