@@ -30,6 +30,7 @@ TensorBoard : for real-time logging
 The goal of this project is to evaluate the performance of three reinforcement learning (RL) algorithms—Soft Actor-Critic (SAC), Proximal Policy Optimization (PPO), and Deep Deterministic Policy Gradient (DDPG)—by training a Humanoid-v4 model in a Gymnasium environment. The aim is to understand each algorithm's efficiency and stability when applied to complex, high-dimensional tasks.
 
 ***Project Structure***
+
 The project consists of:
 
 **Algorithm Implementations**: Code for each RL algorithm, leveraging established libraries and custom callbacks.
