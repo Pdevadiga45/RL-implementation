@@ -58,18 +58,25 @@ The goal of this project is to evaluate the performance of three reinforcement l
 ***Visualization and Analysis***:
 
 -**Reward Plots**: Compared total rewards achieved across episodes for each algorithm.
+
 -**Loss Plots**: Focused on training stability through loss patterns.
+
 -**Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
 
 <h1>Results</h1>
 
 **Each algorithm showed distinct characteristics**:
 
-**SAC**: Demonstrated stability and steady reward improvement, effective at handling exploration-exploitation balance.
-**PPO**: Displayed robustness with relatively smooth convergence, though slower than SAC in reaching peak performance.
-**DDPG**: Encountered issues with instability and required fine-tuning, making it less consistent.
+-**SAC**: Demonstrated stability and steady reward improvement, effective at handling exploration-exploitation balance.
+
+-**PPO**: Displayed robustness with relatively smooth convergence, though slower than SAC in reaching peak performance.
+
+-**DDPG**: Encountered issues with instability and required fine-tuning, making it less consistent.
 
 ***Key Insights***
-SAC’s effectiveness at balancing exploration and exploitation proved advantageous for the complex Humanoid-v4 task.
-PPO’s robustness highlighted its value as a baseline algorithm, providing reliable, albeit slower, performance.
-DDPG’s sensitivity revealed its limitations for environments requiring high adaptability without substantial tuning.
+
+-SAC’s effectiveness at balancing exploration and exploitation proved advantageous for the complex Humanoid-v4 task.
+
+-PPO’s robustness highlighted its value as a baseline algorithm, providing reliable, albeit slower, performance.
+
+-DDPG’s sensitivity revealed its limitations for environments requiring high adaptability without substantial tuning.
