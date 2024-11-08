@@ -31,15 +31,14 @@ The goal of this project is to evaluate the performance of three reinforcement l
 
 <h3>Project Structure</h3>
 
-The project consists of:
-
 **Algorithm Implementations**: Code for each RL algorithm, leveraging established libraries and custom callbacks.
-Environment Setup: Details of the Humanoid-v4 Gymnasium environment, configured for tracking training metrics and episode lengths.
+***Environment Setup***: Details of the Humanoid-v4 Gymnasium environment, configured for tracking training metrics and episode lengths.
 **Data Visualization**: Graphical analysis of key performance metrics, including reward trends, loss patterns, and training stability.
 
 <h2>Approach</h2>
 
 ***Algorithm Selection***:
+
 **SAC**: A stochastic off-policy actor-critic method focused on exploration and stability.
 **PPO**: An on-policy, simpler yet robust algorithm for handling complex control problems.
 **DDPG**: A deterministic off-policy algorithm known for continuous action spaces but more sensitive to hyperparameters.
