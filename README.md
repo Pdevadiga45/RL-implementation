@@ -26,10 +26,10 @@ TensorBoard : for real-time logging
 
 #  Project Overview: Reinforcement Learning Algorithm Comparison on Humanoid-v4 Model
 
-***Objective***
+***Objective***:
 The goal of this project is to evaluate the performance of three reinforcement learning (RL) algorithms—Soft Actor-Critic (SAC), Proximal Policy Optimization (PPO), and Deep Deterministic Policy Gradient (DDPG)—by training a Humanoid-v4 model in a Gymnasium environment. The aim is to understand each algorithm's efficiency and stability when applied to complex, high-dimensional tasks.
 
-***Project Structure***
+<h3>Project Structure</h3>
 
 The project consists of:
 
@@ -37,7 +37,7 @@ The project consists of:
 Environment Setup: Details of the Humanoid-v4 Gymnasium environment, configured for tracking training metrics and episode lengths.
 **Data Visualization**: Graphical analysis of key performance metrics, including reward trends, loss patterns, and training stability.
 
-***Approach***
+<h2>Approach</h2>
 
 ***Algorithm Selection***:
 **SAC**: A stochastic off-policy actor-critic method focused on exploration and stability.
@@ -55,7 +55,7 @@ Environment Setup: Details of the Humanoid-v4 Gymnasium environment, configured 
 **Loss Plots**: Focused on training stability through loss patterns.
 **Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
 
-<h1>**Results**</h1>
+<h1>Results</h1>
 
 **Each algorithm showed distinct characteristics**:
 
