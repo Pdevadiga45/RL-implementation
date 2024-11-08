@@ -24,59 +24,40 @@ numpy : for data manipulation
 
 TensorBoard : for real-time logging
 
-#  Project Overview: Reinforcement Learning Algorithm Comparison on Humanoid-v4 Model
+# Comparative Analysis of Reinforcement Learning Algorithms in Gymnasium Environments
 
-***Objective***:
-The goal of this project is to evaluate the performance of three reinforcement learning (RL) algorithms—Soft Actor-Critic (SAC), Proximal Policy Optimization (PPO), and Deep Deterministic Policy Gradient (DDPG)—by training a Humanoid-v4 model in a Gymnasium environment. The aim is to understand each algorithm's efficiency and stability when applied to complex, high-dimensional tasks.
+This project implements and evaluates three popular reinforcement learning algorithms — SAC, TD3, and DDPG — on the `Humanoid-v4` environment. By leveraging `gymnasium`, `stable-baselines3`, and custom callback functions, this project tracks and visualizes performance metrics to compare the sample efficiency and overall effectiveness of each algorithm.
 
-<h3>Project Structure</h3>
+## Project Setup
 
-**Algorithm Implementations**: Code for each RL algorithm, leveraging established libraries and custom callbacks.
+### Requirements
+- `gymnasium`
+- `stable-baselines3`
+- `torch`
+- `rliable`
+- `matplotlib`
 
-***Environment Setup***: Details of the Humanoid-v4 Gymnasium environment, configured for tracking training metrics and episode lengths.
+### Usage
+1. Clone the repository.
+2. Install the requirements: `pip install -r requirements.txt`
+3. Run the training script: `python train_compare.py`
+4. View logs and performance results in the `logs/` and `videos/` directories.
 
-**Data Visualization**: Graphical analysis of key performance metrics, including reward trends, loss patterns, and training stability.
+## Key Components
 
-<h2>Approach</h2>
+### Environment and Training
+- **Custom Video Recording**: Automates video recording every 100 episodes for model performance review.
+- **Custom Callback**: Logs rewards, episode lengths, and losses, saving them after each episode.
 
-***Algorithm Selection***:
+### Performance Evaluation
+- **Sample Efficiency Curve**: Visualizes average rewards over timesteps.
+- **Aggregate Metrics with Bootstrapped CIs**: Measures median, IQM, and mean performance.
+- **Performance Profiles**: Tracks cumulative reward proportion across episodes.
+- **Pairwise Probability of Improvement**: Compares each pair of algorithms to show improvement probabilities.
 
--**SAC**: A stochastic off-policy actor-critic method focused on exploration and stability.
+## Results
+The results are saved as plots, comparing performance across the algorithms with metrics like sample efficiency and pairwise improvement probabilities.
 
--**PPO**: An on-policy, simpler yet robust algorithm for handling complex control problems.
-
--**DDPG**: A deterministic off-policy algorithm known for continuous action spaces but more sensitive to hyperparameters.
-
-***Training Pipeline***:
-
--**Environment Setup**: Configured Humanoid-v4 environment to track episodic data and overall reward progression.
-
--**Custom Callback Integration**: Used a custom callback to save metrics, ensuring consistency across episodes.
-
--**Evaluation Metrics**: Performance is measured through reward patterns, loss trends, and episode length consistency.
-
-***Visualization and Analysis***:
-
--**Reward Plots**: Compared total rewards achieved across episodes for each algorithm.
-
--**Loss Plots**: Focused on training stability through loss patterns.
-
--**Episode Length Tracking**: Monitored the episode lengths to gauge convergence.
-
-<h1>Results</h1>
-
-**Each algorithm showed distinct characteristics**:
-
--**SAC**: Demonstrated stability and steady reward improvement, effective at handling exploration-exploitation balance.
-
--**PPO**: Displayed robustness with relatively smooth convergence, though slower than SAC in reaching peak performance.
-
--**DDPG**: Encountered issues with instability and required fine-tuning, making it less consistent.
-
-***Key Insights***
-
--SAC’s effectiveness at balancing exploration and exploitation proved advantageous for the complex Humanoid-v4 task.
-
--PPO’s robustness highlighted its value as a baseline algorithm, providing reliable, albeit slower, performance.
-
--DDPG’s sensitivity revealed its limitations for environments requiring high adaptability without substantial tuning.
+## Acknowledgments
+This project utilizes [rliable](https://github.com/google-research/rliable) for robust RL evaluations and is inspired by stable-baselines3 documentation and Gymnasium environments.
+ning.
