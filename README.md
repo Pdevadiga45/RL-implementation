@@ -76,12 +76,12 @@ Building on the findings that SAC is the most efficient and robust reinforcement
 
 Libraries and Tools Used:
 
--`gymnasium`: For environment simulation and interaction.
--`stable-baselines3`: Specifically for the SAC algorithm implementation, ensuring efficient learning and policy updates.
--`torch`: To leverage GPU acceleration, providing faster model training.
--`matplotlib`: For plotting training metrics, facilitating visual analysis.
--`numpy`: For data manipulation and efficient array operations.
--`TensorBoard`: For real-time logging, which helped track various metrics such as episode rewards and losses throughout the training process.
+- `gymnasium`: For environment simulation and interaction.
+- `stable-baselines3`: Specifically for the SAC algorithm implementation, ensuring efficient learning and policy updates.
+- `torch`: To leverage GPU acceleration, providing faster model training.
+- `matplotlib`: For plotting training metrics, facilitating visual analysis.
+- `numpy`: For data manipulation and efficient array operations.
+- `TensorBoard`: For real-time logging, which helped track various metrics such as episode rewards and losses throughout the training process.
 
 # Inference from Extended SAC Training:
 
