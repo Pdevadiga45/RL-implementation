@@ -40,12 +40,15 @@ The sample efficiency curve showed that SAC consistently achieved higher average
 TD3 displayed comparable performance, although with slightly more fluctuations and a lower average reward compared to SAC.
 DDPG lagged in performance, with lower average rewards and higher variability throughout training.
 
+![image](https://github.com/user-attachments/assets/7ed95707-43d3-4d9e-8854-4a925937a8ed)
+
 
 **Performance Profiles:**
 
 SAC's performance profile was the steepest, indicating that it not only learned efficiently but also maintained high performance throughout training.
 TD3's curve was also steep but did not match the cumulative gains of SAC, suggesting it performed well but not as robustly.
 DDPG had a shallower curve, showing that it struggled to achieve the same level of cumulative reward, reinforcing its weaker performance compared to the other algorithms.
+
 ![image](https://github.com/user-attachments/assets/fea732cd-189e-450b-8589-92473ffdf67e)
 
 **Pairwise Probability of Improvement:**
@@ -53,6 +56,10 @@ DDPG had a shallower curve, showing that it struggled to achieve the same level 
 The bar chart comparing pairwise probabilities demonstrated that SAC had a very high probability (close to 1.0) of outperforming both TD3 and DDPG, solidifying its position as the top performer.
 TD3 was more likely to outperform DDPG but still showed a probability lower than that of SAC.
 DDPG's probability of outperforming either SAC or TD3 was close to zero, confirming its lower comparative performance.
+
+![image](https://github.com/user-attachments/assets/2df65e2a-f29c-431a-870f-319478723a58)
+
+
 Inferences from the Analysis
 From these graphical results, we can derive the following inferences:
 
