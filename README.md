@@ -60,10 +60,11 @@ DDPG's probability of outperforming either SAC or TD3 was close to zero, confirm
 ![image](https://github.com/user-attachments/assets/2df65e2a-f29c-431a-870f-319478723a58)
 
 
-Inferences from the Analysis
+#Inferences from the Analysis
+
 From these graphical results, we can derive the following inferences:
 
-SAC is the Best Choice: SAC's consistent and high average reward over multiple runs, along with its dominant position in the pairwise probability analysis, indicates that it is the most effective algorithm for training the Mujoco Humanoid-v4 model in terms of both sample efficiency and overall performance.
+**SAC is the Best Choice:** SAC's consistent and high average reward over multiple runs, along with its dominant position in the pairwise probability analysis, indicates that it is the most effective algorithm for training the Mujoco Humanoid-v4 model in terms of both sample efficiency and overall performance.
 TD3 is Competitive but Less Robust: While TD3 shows decent performance, it does not reach the consistency or the level of SAC. It may be a viable alternative when computational resources or specific model constraints favor its use, but it might require more careful tuning.
 DDPG Falls Behind: DDPG's performance was notably weaker across all metrics. It may not be well-suited for complex control tasks in environments like Mujoco's Humanoid-v4 without significant modifications or enhancements.
 Overall, the comparative analysis through these graphical outputs clearly positions SAC as the most reliable and efficient algorithm for this specific application.
