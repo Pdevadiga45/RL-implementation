@@ -60,7 +60,7 @@ DDPG's probability of outperforming either SAC or TD3 was close to zero, confirm
 ![image](https://github.com/user-attachments/assets/2df65e2a-f29c-431a-870f-319478723a58)
 
 
-#Inferences from the Analysis
+### Inferences from the Analysis
 
 From these graphical results, we can derive the following inferences:
 
