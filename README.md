@@ -40,7 +40,8 @@ The sample efficiency curve showed that SAC consistently achieved higher average
 TD3 displayed comparable performance, although with slightly more fluctuations and a lower average reward compared to SAC.
 DDPG lagged in performance, with lower average rewards and higher variability throughout training.
 
-![image](https://github.com/user-attachments/assets/7ed95707-43d3-4d9e-8854-4a925937a8ed)
+![image](https://github.com/user-attachments/assets/c630d178-5d36-464c-96de-b4957703a1b6)
+
 
 
 **Performance Profiles:**
