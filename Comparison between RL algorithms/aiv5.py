@@ -168,38 +168,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-# Aggregate Metrics with 95% Stratified Bootstrap CIs
-def aggregate_func(x):
-    return np.array([
-        metrics.aggregate_median(x),
-        metrics.aggregate_iqm(x),
-        metrics.aggregate_mean(x)
-    ])
-
-# Prepare data for aggregation
-rewards_data = {algo: np.array(rewards) for algo, rewards in results.items()}
-
-# Compute aggregate scores and confidence intervals
-aggregate_scores, aggregate_score_cis = rly.get_interval_estimates(
-    rewards_data, aggregate_func, reps=50000
-)
-
-# Generate Plot with Consistent Labeling
-fig, axes = plot_utils.plot_interval_estimates(
-    aggregate_scores, aggregate_score_cis,
-    metric_names=['Median', 'IQM', 'Mean'],
-    algorithms=list(rewards_data.keys()),
-    xlabel='Human Normalized Score'
-)
-
-# Ensure Title and Layout are Set Properly
-fig.suptitle("Aggregate Metrics with 95% Bootstrap CIs", fontsize=16)
-
-# Adjust the layout to provide more space for the x-label
-plt.subplots_adjust(bottom=0.15)  # Increase bottom margin
-
-plt.show()
-
 # Performance Profiles
 performance_profiles = {algo: np.cumsum(np.array(rewards)) / np.sum(np.array(rewards)) for algo, rewards in results.items()}
 
