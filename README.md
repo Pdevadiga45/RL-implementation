@@ -46,6 +46,7 @@ DDPG lagged in performance, with lower average rewards and higher variability th
 SAC's performance profile was the steepest, indicating that it not only learned efficiently but also maintained high performance throughout training.
 TD3's curve was also steep but did not match the cumulative gains of SAC, suggesting it performed well but not as robustly.
 DDPG had a shallower curve, showing that it struggled to achieve the same level of cumulative reward, reinforcing its weaker performance compared to the other algorithms.
+![image](https://github.com/user-attachments/assets/fea732cd-189e-450b-8589-92473ffdf67e)
 
 **Pairwise Probability of Improvement:**
 
